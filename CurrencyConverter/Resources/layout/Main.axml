@@ -1,7 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
-</LinearLayout>
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtNameApp"
+        android:text="Currency Converter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelIngresosM"
+        android:text="Ingresos México"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtNameApp"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtIngresosM"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtNameApp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelEgresosM"
+        android:text="Egresos México"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/labelIngresosM"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtEgresosM"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtIngresosM"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelIngresosC"
+        android:text="Ingresos Colombia"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/labelEgresosM"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtIngresosC"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtEgresosM"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelEgresosC"
+        android:text="Egresos Colombia"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/labelIngresosC"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtEgresosC"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtIngresosC"
+        android:gravity="center" />
+    <Button
+        android:text="Calculate"
+        android:id="@+id/btnCalculate"
+        android:background="#FFFF1111"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtEgresosC"
+        android:gravity="center" />
+</RelativeLayout>
