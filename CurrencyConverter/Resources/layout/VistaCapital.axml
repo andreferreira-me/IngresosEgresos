@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtNameApp"
+        android:text="Currency Converter"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelCapitalM"
+        android:text="Capital México"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtNameApp"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtCapitalM"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtNameApp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/labelCapitalC"
+        android:text="Capital Colômbia"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/labelCapitalM"
+        android:gravity="center" />
+    <EditText
+        android:id="@+id/txtCapitalC"
+        android:text="0"
+        android:numeric="integer"
+        android:inputType="number"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtCapitalM"
+        android:gravity="center" />
+    <Button
+        android:text="Exit"
+        android:id="@+id/btnExit"
+        android:background="#FFFF1111"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtCapitalC"
+        android:gravity="center" />
+</RelativeLayout>
